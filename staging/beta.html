@@ -1,0 +1,699 @@
+<!doctype html>
+
+<!-- Many thanks to the creators of turnJS -->
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- <meta name="viewport" content="width = 1050, user-scalable = no" /> -->
+<!-- <meta name="viewport" content="width = 1050" /> -->
+<meta name="Description" CONTENT="Title: The Pilot Suit, Author: Bany Jaya, Illustrator: Anastasiia Hryvtsova, Publisher: Temperance Press, Category: Books, Length: 40 pages">
+<title>The Pilot Suit by Bany Jaya</title>
+
+<link rel="shortcut icon" href="pics/favicon.png" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="pics/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="pics/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="pics/favicon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="mask-icon" href="pics/favicon.png" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+<!-- jQuery 1.7 definitely works, but with some flaws on Firefox -->
+<!-- <script type="text/javascript" src="js/jquery.min.1.7.js"></script> -->
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+
+<!-- turn.js files -->
+
+<!-- <script type="text/javascript" src="js/hash.js"></script> -->
+<link type="text/css" rel="stylesheet" href="css/magazine.css"></link>
+
+</head>
+<body>
+
+
+<div class="made">
+	<!-- <h3>The Pilot Suit</h3> -->
+	<p id="instr">If you're looking for a <b class="papyrus_font red_colour">unique gift</b> for a child aged 4 to 8, <b class="georgia_font blue_colour">turn the pages below</b> to read <i>The Pilot Suit</i> — a picture book with <b>more to it than meets the eye</b>.</p>
+	<a href="https://triplican.com/tps/us_amz?home" class="get-now">Buy (USA)</a>
+	<a href="https://triplican.com/tps/uk_amz?home" class="get-now">Buy (UK)</a>
+	<br class="flexibreak">
+	<br class="flexibreak">
+	<a href="https://triplican.com/tps/au_amz?home" class="get-now">Buy (Australia)</a>
+	<a href="https://triplican.com/tps/gdr?home" class="review-now">Goodreads</a>
+</div>
+
+<div class="magazine-viewport">
+	<div class="container">
+		<div class="magazine">
+			<!-- Next button -->
+			<div ignore="1" class="next-button"></div>
+			<!-- Previous button -->
+			<div ignore="1" class="previous-button"></div>
+		</div>
+	</div>
+</div>
+
+<!-- Thumbnails -->
+<div class="thumbnails">
+	<div>
+		<ul>
+			<li class="i">
+				<img src="pages/1-thumb.jpg" width="30" height="30" class="page-1">
+				<span>1</span>
+			</li>
+			<li class="d">
+				<img src="pages/2-thumb.jpg" width="30" height="30" class="page-2">
+				<img src="pages/3-thumb.jpg" width="30" height="30" class="page-3">
+				<span>2-3</span>
+			</li>
+			<li class="d">
+				<img src="pages/4-thumb.jpg" width="30" height="30" class="page-4">
+				<img src="pages/5-thumb.jpg" width="30" height="30" class="page-5">
+				<span>4-5</span>
+			</li>
+			<li class="d">
+				<img src="pages/6-thumb.jpg" width="30" height="30" class="page-6">
+				<img src="pages/7-thumb.jpg" width="30" height="30" class="page-7">
+				<span>6-7</span>
+			</li>
+			<li class="d">
+				<img src="pages/8-thumb.jpg" width="30" height="30" class="page-8">
+				<img src="pages/9-thumb.jpg" width="30" height="30" class="page-9">
+				<span>8-9</span>
+			</li>
+			<li class="d">
+				<img src="pages/10-thumb.jpg" width="30" height="30" class="page-10">
+				<img src="pages/11-thumb.jpg" width="30" height="30" class="page-11">
+				<span>10-11</span>
+			</li>
+			<li class="d">
+				<img src="pages/12-thumb.jpg" width="30" height="30" class="page-12">
+				<img src="pages/13-thumb.jpg" width="30" height="30" class="page-13">
+				<span>12-13</span>
+			</li>
+			<li class="d">
+				<img src="pages/14-thumb.jpg" width="30" height="30" class="page-14">
+				<img src="pages/15-thumb.jpg" width="30" height="30" class="page-15">
+				<span>14-15</span>
+			</li>
+			<li class="d">
+				<img src="pages/16-thumb.jpg" width="30" height="30" class="page-16">
+				<img src="pages/17-thumb.jpg" width="30" height="30" class="page-17">
+				<span>16-17</span>
+			</li>
+			<li class="d">
+				<img src="pages/18-thumb.jpg" width="30" height="30" class="page-18">
+				<img src="pages/19-thumb.jpg" width="30" height="30" class="page-19">
+				<span>18-19</span>
+			</li>
+			<li class="d">
+				<img src="pages/20-thumb.jpg" width="30" height="30" class="page-20">
+				<img src="pages/21-thumb.jpg" width="30" height="30" class="page-21">
+				<span>20-21</span>
+			</li>
+			<li class="d">
+				<img src="pages/22-thumb.jpg" width="30" height="30" class="page-22">
+				<img src="pages/23-thumb.jpg" width="30" height="30" class="page-23">
+				<span>22-23</span>
+			</li>
+			<li class="d">
+				<img src="pages/24-thumb.jpg" width="30" height="30" class="page-24">
+				<img src="pages/25-thumb.jpg" width="30" height="30" class="page-25">
+				<span>24-25</span>
+			</li>
+			<li class="d">
+				<img src="pages/26-thumb.jpg" width="30" height="30" class="page-26">
+				<img src="pages/27-thumb.jpg" width="30" height="30" class="page-27">
+				<span>26-27</span>
+			</li>
+			<li class="d">
+				<img src="pages/28-thumb.jpg" width="30" height="30" class="page-28">
+				<img src="pages/29-thumb.jpg" width="30" height="30" class="page-29">
+				<span>28-29</span>
+			</li>
+			<li class="d">
+				<img src="pages/30-thumb.jpg" width="30" height="30" class="page-30">
+				<img src="pages/31-thumb.jpg" width="30" height="30" class="page-31">
+				<span>30-31</span>
+			</li>
+			<li class="d">
+				<img src="pages/32-thumb.jpg" width="30" height="30" class="page-32">
+				<img src="pages/33-thumb.jpg" width="30" height="30" class="page-33">
+				<span>32-33</span>
+			</li>
+			<li class="d">
+				<img src="pages/34-thumb.jpg" width="30" height="30" class="page-34">
+				<img src="pages/35-thumb.jpg" width="30" height="30" class="page-35">
+				<span>34-35</span>
+			</li>
+			<li class="d">
+				<img src="pages/36-thumb.jpg" width="30" height="30" class="page-36">
+				<img src="pages/37-thumb.jpg" width="30" height="30" class="page-37">
+				<span>36-37</span>
+			</li>
+			<li class="d">
+				<img src="pages/38-thumb.jpg" width="30" height="30" class="page-38">
+				<img src="pages/39-thumb.jpg" width="30" height="30" class="page-39">
+				<span>38-39</span>
+			</li>
+			<li class="d">
+				<img src="pages/40-thumb.jpg" width="30" height="30" class="page-40">
+				<img src="pages/41-thumb.jpg" width="30" height="30" class="page-41">
+				<span>40-41</span>
+			</li>
+			<li class="i">
+				<img src="pages/42-thumb.jpg" width="30" height="30" class="page-42">
+				<span>42</span>
+			</li>
+		<ul>
+	<div>
+</div>
+
+<!--
+<br>
+    <h4>If you wish to leave a Goodreads review of the story, <a href="https://triplican.com/tps/gdr?home">CLICK HERE</a>.
+      <br>
+      <br>If you wish to buy a copy of the book for a little someone, click the links below (available only in the UK and Australia):
+      <br><a href="https://triplican.com/tps/uk_amz?home">BUY IN THE UNITED KINGDOM</a>
+      <br><a href="https://triplican.com/tps/au_amz?home">BUY IN AUSTRALIA</a>
+    </h4>
+    <h1>The Pilot Suit</h1>
+    <h3>A children's picture book for kids aged 4 to 8 years old</h3>
+    <img src="/cover.jpg" class="coverimageonly">
+    <br>
+    <h4>In this charming and thought-provoking children's picture book,<br>
+      a little boy dreams of becoming a pilot. This dream, coupled with<br>
+      some chance encounters, takes the little one on a journey to<br>
+      distant lands that brings him new friends, teaches him<br>
+      important life lessons and ultimately shapes his very destiny.<br>
+      And it all unfolds against a backdrop that honours<br>
+      the true origins of one very special day.
+    </h4>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/########" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	-->
+
+
+
+
+<script type="text/javascript">
+
+function loadApp() {
+
+ $('#all').fadeIn(1000);
+
+	// Create the flipbook
+
+	$('.magazine').turn({
+
+			// Magazine width
+
+			width: 1300,
+
+			// Magazine height
+
+			height: 650,
+
+			// Elevation will move the peeling corner this number of pixels by default
+
+			elevation: 50,
+
+			// Hardware acceleration
+
+			acceleration: !isChrome(),
+
+			// Enables gradients
+
+			gradients: true,
+
+			// Auto center this flipbook
+
+			autoCenter: true,
+
+			// The number of pages
+
+			pages: 42,
+
+
+			// Events
+			when: {
+
+			turning: function(event, page, view) {
+
+				var book = $(this),
+				currentPage = book.turn('page'),
+				pages = book.turn('pages');
+
+				// Update the current URI
+
+// 				Hash.go('page/' + page).update();
+
+
+				// Show and hide navigation buttons
+
+				disableControls(page);
+
+
+				$('.thumbnails .page-'+currentPage).
+					parent().
+					removeClass('current');
+
+				$('.thumbnails .page-'+page).
+					parent().
+					addClass('current');
+
+			},
+
+			turned: function(event, page, view) {
+
+				disableControls(page);
+
+				$(this).turn('center');
+
+				if (page==1) {
+					$(this).turn('peel', 'br');
+					
+					if (window.fetch) {//If fetch() is supported [sends a GET request by default]
+				    fetch('https://triplican.com/tps1', {
+				      mode: 'no-cors'
+				    })
+				  } else {//For older browsers
+				    $.ajax ({
+				      type: "GET",
+				      url: 'https://triplican.com/tps1'
+				    });
+				  }
+					
+				}
+				if (page==2) {
+					if (window.fetch) {//If fetch() is supported [sends a GET request by default]
+				    fetch('https://triplican.com/tps2', {
+				      mode: 'no-cors'
+				    })
+				  } else {//For older browsers
+				    $.ajax ({
+				      type: "GET",
+				      url: 'https://triplican.com/tps2'
+				    });
+				  }
+				}
+				if (page==36) {
+					if (window.fetch) {//If fetch() is supported [sends a GET request by default]
+				    fetch('https://triplican.com/tps36', {
+				      mode: 'no-cors'
+				    })
+				  } else {//For older browsers
+				    $.ajax ({
+				      type: "GET",
+				      url: 'https://triplican.com/tps36'
+				    });
+				  }
+				}
+				if (page==38) {
+					if (window.fetch) {//If fetch() is supported [sends a GET request by default]
+				    fetch('https://triplican.com/tps38', {
+				      mode: 'no-cors'
+				    })
+				  } else {//For older browsers
+				    $.ajax ({
+				      type: "GET",
+				      url: 'https://triplican.com/tps38'
+				    });
+				  }
+				}
+				if (page==40) {
+					if (window.fetch) {//If fetch() is supported [sends a GET request by default]
+				    fetch('https://triplican.com/tps40', {
+				      mode: 'no-cors'
+				    })
+				  } else {//For older browsers
+				    $.ajax ({
+				      type: "GET",
+				      url: 'https://triplican.com/tps40'
+				    });
+				  }
+				}
+				if (page==42) {
+					if (window.fetch) {//If fetch() is supported [sends a GET request by default]
+				    fetch('https://triplican.com/tps42', {
+				      mode: 'no-cors'
+				    })
+				  } else {//For older browsers
+				    $.ajax ({
+				      type: "GET",
+				      url: 'https://triplican.com/tps42'
+				    });
+				  }
+				}
+// 				if (page==44) {
+// 					if (window.fetch) {//If fetch() is supported [sends a GET request by default]
+// 				    fetch('https://triplican.com/tps44', {
+// 				      mode: 'no-cors'
+// 				    })
+// 				  } else {//For older browsers
+// 				    $.ajax ({
+// 				      type: "GET",
+// 				      url: 'https://triplican.com/tps44'
+// 				    });
+// 				  }
+// 				}
+// 				if (page==46) {
+// 					if (window.fetch) {//If fetch() is supported [sends a GET request by default]
+// 				    fetch('https://triplican.com/tps46', {
+// 				      mode: 'no-cors'
+// 				    })
+// 				  } else {//For older browsers
+// 				    $.ajax ({
+// 				      type: "GET",
+// 				      url: 'https://triplican.com/tps46'
+// 				    });
+// 				  }
+// 				}
+			},
+
+			missing: function (event, pages) {
+
+				// Add pages that aren't in the magazine
+
+				for (var i = 0; i < pages.length; i++)
+					addPage(pages[i], $(this));
+
+			}
+		}
+
+	});
+
+	// Zoom.js (disabled for user experience)
+
+	$('.magazine-viewport').zoom({
+		flipbook: $('.magazine'),
+		max: function() {
+
+			return largeMagazineWidth()/$('.magazine').width();
+
+		},
+		when: {
+// 			tap: function(event) {		// Commented out this zoom-on-tap function for UX
+
+// 				if ($(this).zoom('value')==1) {
+// 					$('.magazine').
+// 						removeClass('animated').
+// 						addClass('zoom-in');
+// 					$(this).zoom('zoomIn', event);
+// 				} else {
+// 					$(this).zoom('zoomOut');
+// 				}
+// 			},
+
+			resize: function(event, scale, page, pageElement) {
+
+				if (scale==1)
+					loadSmallPage(page, pageElement);
+				else
+					loadLargePage(page, pageElement);
+
+			},
+
+			zoomIn: function () {
+
+				$('.thumbnails').hide();
+				$('.made').hide();
+				$('.magazine').addClass('zoom-in');
+
+				if (!window.escTip && !$.isTouch) {
+					escTip = true;
+
+					$('<div />', {'class': 'esc'}).
+						html('<div>Press ESC to exit</div>').
+							appendTo($('body')).
+							delay(2000).
+							animate({opacity:0}, 500, function() {
+								$(this).remove();
+							});
+				}
+			},
+
+			zoomOut: function () {
+
+				$('.esc').hide();
+				$('.thumbnails').fadeIn();
+				$('.made').fadeIn();
+
+				setTimeout(function(){
+					$('.magazine').addClass('animated').removeClass('zoom-in');
+					resizeViewport();
+				}, 0);
+
+			},
+
+			swipeLeft: function() {
+
+				$('.magazine').turn('next');
+
+			},
+
+			swipeRight: function() {
+
+				$('.magazine').turn('previous');
+
+			}
+		}
+	});
+
+	// Using arrow keys to turn the page
+
+	$(document).keydown(function(e){
+
+		var previous = 37, next = 39, esc = 27;
+
+		switch (e.keyCode) {
+			case previous:
+
+				// left arrow
+				$('.magazine').turn('previous');
+				e.preventDefault();
+
+			break;
+			case next:
+
+				//right arrow
+				$('.magazine').turn('next');
+				e.preventDefault();
+
+			break;
+			case esc:
+
+				$('.magazine-viewport').zoom('zoomOut');
+				e.preventDefault();
+
+			break;
+		}
+	});
+
+	// URIs - Format #/page/1
+
+// 	Hash.on('^page\/([0-9]*)$', {
+// 		yep: function(path, parts) {
+// 			var page = parts[1];
+
+// 			if (page!==undefined) {
+// 				if ($('.magazine').turn('is'))
+// 					$('.magazine').turn('page', page);
+// 			}
+
+// 		},
+// 		nop: function(path) {
+
+// 			if ($('.magazine').turn('is'))
+// 				$('.magazine').turn('page', 1);
+// 		}
+// 	});
+
+
+	$(window).resize(function() {
+		resizeViewport();
+	}).bind('orientationchange', function() {
+		resizeViewport();
+	});
+
+	// Events for thumbnails
+
+	$('.thumbnails').click(function(event) {
+
+		var page;
+
+		if (event.target && (page=/page-([0-9]+)/.exec($(event.target).attr('class'))) ) {
+
+			$('.magazine').turn('page', page[1]);
+		}
+	});
+
+	$('.thumbnails li').
+		bind($.mouseEvents.over, function() {
+
+			$(this).addClass('thumb-hover');
+
+		}).bind($.mouseEvents.out, function() {
+
+			$(this).removeClass('thumb-hover');
+
+		});
+
+	if ($.isTouch) {
+
+		$('.thumbnails').
+			addClass('thumbanils-touch').
+			bind($.mouseEvents.move, function(event) {
+				event.preventDefault();
+			});
+
+	} else {
+
+		$('.thumbnails ul').mouseover(function() {
+
+			$('.thumbnails').addClass('thumbnails-hover');
+
+		}).mousedown(function() {
+
+			return false;
+
+		}).mouseout(function() {
+
+			$('.thumbnails').removeClass('thumbnails-hover');
+
+		});
+
+	}
+
+
+	// Regions
+
+	if ($.isTouch) {
+		$('.magazine').bind('touchstart', regionClick);
+	} else {
+		$('.magazine').click(regionClick);
+	}
+
+	// Events for the next button
+
+	$('.next-button').bind($.mouseEvents.over, function() {
+
+		$(this).addClass('next-button-hover');
+
+	}).bind($.mouseEvents.out, function() {
+
+		$(this).removeClass('next-button-hover');
+
+	}).bind($.mouseEvents.down, function() {
+
+		$(this).addClass('next-button-down');
+
+	}).bind($.mouseEvents.up, function() {
+
+		$(this).removeClass('next-button-down');
+
+	}).click(function() {
+
+		$('.magazine').turn('next');
+
+	});
+
+	// Events for the next button
+
+	$('.previous-button').bind($.mouseEvents.over, function() {
+
+		$(this).addClass('previous-button-hover');
+
+	}).bind($.mouseEvents.out, function() {
+
+		$(this).removeClass('previous-button-hover');
+
+	}).bind($.mouseEvents.down, function() {
+
+		$(this).addClass('previous-button-down');
+
+	}).bind($.mouseEvents.up, function() {
+
+		$(this).removeClass('previous-button-down');
+
+	}).click(function() {
+
+		$('.magazine').turn('previous');
+
+	});
+
+
+	resizeViewport();
+
+	$('.magazine').addClass('animated');
+
+}
+
+
+ $('#all').hide();
+
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['js/turn.min.js'],
+	nope: ['js/turn.html4.min.js'],
+	both: ['js/zoom.min.js'],
+	complete: loadApp
+});
+	
+// var mylinks = document.getElementsByTagName("a");
+// for(var z = 0; z < mylinks.length; z++) {
+//     (function (z) { //Module Pattern (JS OOP Design Pattern) for closure
+//         mylinks[z].addEventListener("click", function() {
+//             gtag('event', 'conversion', {
+//                 'send_to': 'AW-482282302/bROnCIvp9IUDEL6W_OUB',
+//                 'transaction_id': ''
+//             });
+//         });
+//     }) (z);
+// }
+	
+</script>
+
+<script type="text/javascript" src="js/magazine.js"></script>
+<script type="text/javascript" src="js/get.js"></script>
+			
+<script>
+window['_fs_debug'] = false;
+window['_fs_host'] = 'fullstory.com';
+window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+window['_fs_org'] = 'HD9N5';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+    if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+    g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+    o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+    g.anonymize=function(){g.identify(!!0)};
+    g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+    g.log = function(a,b){g("log",[a,b])};
+    g.consent=function(a){g("consent",!arguments.length||a)};
+    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    g.clearUserCookie=function(){};
+    g.setVars=function(n, p){g('setVars',[n,p]);};
+    g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+    if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+    g._v="1.3.0";
+})(window,document,window['_fs_namespace'],'script','user');
+</script>
+	
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-482282302"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-482282302');
+</script> -->
+
+</body>
+</html>
